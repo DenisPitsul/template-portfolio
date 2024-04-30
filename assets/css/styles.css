@@ -119,6 +119,7 @@ body {
 .photos-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .photos-img{
     width: 100%;
@@ -238,6 +239,7 @@ body {
 .about-price-lists{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 1rem;
 }
 .about-price-list{
@@ -348,6 +350,7 @@ body {
     padding: 0 1.5rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 .footer-block{
     padding: 0 0.5rem;
@@ -444,11 +447,15 @@ body {
 @media screen and (max-width: 600px) {
     .photos-wrapper{
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .about-price-lists{
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
     }
     .footer-wrapper{
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
     }
 }
