@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Cards</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav" id="nav">
+        <h1 class="nav-title">SOME 
+          NAME</h1>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link close-link" id="closeBtn" href="#">CLOSE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="overlay" id="overlay"></div>
+      <header class="header">
+        <span class="header-logo-name">SOME NAME</span>
+        <button class="header-burger-btn" id="burgerBtn" type="button">
+          <i class="header-burger-icon fa-solid fa-bars"></i>
+        </button>
+      </header>
+      <main class="main">
+        <section class="photos">
+          <div class="photos-wrapper">
+            <img class="photos-img" src="./assets/images/natureboy.jpg" alt="A boy surrounded by beautiful nature">
+            <img class="photos-img" src="./assets/images/girl.jpg" alt="Canoeing again">
+            <img class="photos-img" src="./assets/images/boy.jpg" alt="Quiet day at the beach. Cold, but beautiful">
+            <img class="photos-img" src="./assets/images/girl_mountain.jpg" alt="What a beautiful scenery this sunset">
+            <img class="photos-img" src="./assets/images/man_bench.jpg" alt="Waiting for the bus in the desert">
+            <img class="photos-img" src="./assets/images/girl_train.jpg" alt="A girl, and a train passing">
+            <img class="photos-img" src="./assets/images/girl.jpg" alt="The Beach. Me. Alone. Beautiful">
+            <img class="photos-img" src="./assets/images/natureboy.jpg" alt="Nature again.. At its finest!">
+            <img class="photos-img" src="./assets/images/closegirl.jpg" alt="What a beautiful day!">
+          </div>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">«</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-selected" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">»</a>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <div class="about-container">
+            <h2 class="about-title">About Me</h2>
+            <img class="about-photo" src="./assets/images/avatar_hat.jpg" alt="Me">
+            <p class="about-name">My Name</p>
+            <p class="about-text">Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="about-contact">mail: example@example.com</p>
+            <p class="about-contact">tel: 5353 35531</p>
+            <div class="about-skills-wrapper">
+              <h3 class="about-subtitle">Technical Skils</h3>
+              <p class="about-skill">Photography</p>
+              <div class="about-skill-bar">
+                <div class="about-skill-progress about-skill-progress-photography">95%</div>
+              </div>
+              <p class="about-skill">Web Design</p>
+              <div class="about-skill-bar">
+                <div class="about-skill-progress about-skill-progress-design">85%</div>
+              </div>
+              <p class="about-skill">Photoshop</p>
+              <div class="about-skill-bar">
+                <div class="about-skill-progress about-skill-progress-photoshop">80%</div>
+              </div>
+              <button class="about-resume-btn" type="button">Download Resume</button>
+            </div>
+            <div class="about-price-wrapper">
+              <h3 class="about-subtitle">How much I change</h3>
+              <div class="about-price-lists">
+                <ul class="about-price-list">
+                  <li class="about-price-item about-price-item-top">Basic</li>
+                  <li class="about-price-item">Web Design</li>
+                  <li class="about-price-item">Photography</li>
+                  <li class="about-price-item">5GB Storage</li>
+                  <li class="about-price-item">Mail Support</li>
+                  <li class="about-price-item about-price-item-price-wrapper">
+                    <p class="about-price-item-price">$ 10</p>
+                    <p class="about-price-item-text">per month</p>
+                  </li>
+                  <li class="about-price-item about-price-item-bottom">
+                    <button class="about-price-item-btn" type="button">Sign Up</button>
+                  </li>
+                </ul>
+                <ul class="about-price-list">
+                  <li class="about-price-item about-price-item-top">Pro</li>
+                  <li class="about-price-item">Web Design</li>
+                  <li class="about-price-item">Photography</li>
+                  <li class="about-price-item">5GB Storage</li>
+                  <li class="about-price-item">Mail Support</li>
+                  <li class="about-price-item about-price-item-price-wrapper">
+                    <p class="about-price-item-price">$ 25</p>
+                    <p class="about-price-item-text">per month</p>
+                  </li>
+                  <li class="about-price-item about-price-item-bottom">
+                    <button class="about-price-item-btn" type="button">Sign Up</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact-container">
+            <h2 class="contact-title">Contact Me</h2>
+            <p class="contact-text">Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+            <form class="contact-form" action="">
+              <div class="contact-form-field">
+                <label class="contact-form-label" for="name">Name</label>
+                <input class="contact-form-input" type="text" id="name" name="name" required/>
+              </div>
+              <div class="contact-form-field">
+                <label class="contact-form-label" for="email">Email</label>
+                <input class="contact-form-input" type="email" id="email" name="email" required/>
+              </div>
+              <div class="contact-form-field">
+                <label class="contact-form-label" for="message">Message</label>
+                <input class="contact-form-input" type="text" id="message" name="message"/>
+              </div>
+              <button class="contact-form-btn" type="submit">Send message</button>
+            </form>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer-wrapper">
+            <div class="footer-block">
+              <h2 class="footer-title">INFO</h2>
+              <p class="footer-text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div class="footer-block">
+              <h2 class="footer-title">BLOG POSTS</h2>
+              <ul class="footer-posts-list">
+                <li class="footer-post-item">
+                  <img class="footer-post-img" src="./assets/images/workshop.jpg" alt="Workshop">
+                  <div class="footer-post-text-wrapper">
+                    <p class="footer-post-text-large">Lorem</p>
+                    <p class="footer-post-text-small">Sed mattis nunc</p>
+                  </div>
+                </li>
+                <li class="footer-post-item">
+                  <img class="footer-post-img" src="./assets/images/gondol.jpg" alt="Gondol">
+                  <div class="footer-post-text-wrapper">
+                    <p class="footer-post-text-large">Ipsum</p>
+                    <p class="footer-post-text-small">Praes tinci sed</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-block">
+              <h2 class="footer-title">POPULAR TAGS</h2>
+              <ul class="footer-tags-list">
+                <li class="footer-tag-item footer-first-tag-item">Travel</li>
+                <li class="footer-tag-item">New York</li>
+                <li class="footer-tag-item">London</li>
+                <li class="footer-tag-item">IKEA</li>
+                <li class="footer-tag-item">NORWAY</li>
+                <li class="footer-tag-item">DIY</li>
+                <li class="footer-tag-item">Ideas</li>
+                <li class="footer-tag-item">Baby</li>
+                <li class="footer-tag-item">Family</li>
+                <li class="footer-tag-item">News</li>
+                <li class="footer-tag-item">Clothing</li>
+                <li class="footer-tag-item">Shopping</li>
+                <li class="footer-tag-item">Sports</li>
+                <li class="footer-tag-item">Games</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom-content">
+            Powered by <a class="footer-bootom-link" href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script type="module" src="./assets/js/mobile-menu.js"></script>
+  </body>
+</html>
