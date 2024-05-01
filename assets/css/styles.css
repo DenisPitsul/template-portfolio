@@ -23,7 +23,10 @@ body {
     margin: 0 auto;
     overflow: hidden;
 }
-.nav{
+.header{
+    
+}
+.side-menu{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -38,8 +41,11 @@ body {
     transition: transform 0.5s ease-in-out;
     color: var(--dark-gray-color);
 }
+.nav{
+    
+}
 @media screen and (min-width: 1600px) {
-    .nav {
+    .side-menu {
         left: calc((100% - 1600px) / 2);
     }
 }
@@ -89,8 +95,7 @@ body {
 .overlay.is-open {
     display: block;
 }
-
-.header{
+.header-content{
     display: none;
     padding: 1rem;
     background-color: var(--white-color);
@@ -174,8 +179,11 @@ body {
     font-weight: 600;
 }
 .about-photo{
-    padding: 2rem 0;
+    margin-top: 2rem;
     width: 100%;
+}
+.about-info{
+    padding-top: 2rem;
 }
 .about-subtitle{
     margin: 0.625rem 0;
@@ -197,7 +205,7 @@ body {
 .about-contact-link:hover{
     color: var(--white-color)
 }
-.about-skills-wrapper{
+.about-skills{
     border-top: 1px solid var(--dark-white-color);
     border-bottom: 1px solid var(--dark-white-color);
     margin: 1.25rem 0;
@@ -240,24 +248,28 @@ body {
 .about-resume-btn:hover{
     background-color: #cccccc;
 }
-.about-price-wrapper{
+.about-price{
     padding: 0.75rem 0 0;
 }
-.about-price-lists{
+.about-price-sections{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
+    text-align: center;
 }
-.about-price-list{
+.about-price-section{
     opacity: 0.6;
     display: flex;
     flex-direction: column;
-    text-align: center;
     transition: opacity 0.3s ease-in-out;
 }
-.about-price-list:hover {
+.about-price-section:hover {
     opacity: 1;
+}
+.about-price-list{
+    display: flex;
+    flex-direction: column;
 }
 .about-price-item{
     padding: 1rem;
@@ -265,7 +277,7 @@ body {
     background-color: var(--white-color);
     border-bottom: 1px solid #dddddd;
 }
-.about-price-item-top{
+.about-price-title{
     background-color: var(--black-color);
     color: var(--white-color);
     padding: 2rem 1rem;
@@ -280,24 +292,24 @@ body {
     color: var(--black-color);
     font-size: 1.875rem;
 }
-.about-price-item-bottom{
+.about-price-item-text{
+    opacity: 0.6;
+}
+.about-btn-wrapper{
     padding: 1.5rem 1rem;
     background-color: var(--dark-white-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about-price-item-text{
-    opacity: 0.6;
-}
-.about-price-item-btn{
+.about-sign-up-btn{
     padding: 0.75rem 1.5rem;
     border: none;
     background-color: var(--white-color);
     font-size: 0.9375rem;
     line-height: 1.5;
 }
-.about-price-item-btn:hover{
+.about-sign-up-btn:hover{
     background-color: #cccccc;
     transition: background-color 0.3s ease-in-out;
 }
@@ -428,13 +440,13 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-    .nav {
+    .side-menu {
         transform: translateX(-300px);
     }
-    .is-nav-open {
+    .is-side-menu-open {
         transform: translateX(0)
     }
-    .header {
+    .header-content {
         position: fixed;
         top: 0;
         left: 0;
@@ -456,7 +468,7 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    .about-price-lists{
+    .about-price-sections{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         
