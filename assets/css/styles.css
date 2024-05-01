@@ -142,7 +142,7 @@ body {
     display: inline-block;
     padding: 0.75rem 1rem;
     color: var(--black-color);
-    transition: background-color 0.3 ease-in-out, color 0.3 ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .pagination-link-selected {
     background-color: var(--black-color);
@@ -189,6 +189,13 @@ body {
 }
 .about-contact{
     margin: 0.9375rem 0;
+}
+.about-contact-link {
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+.about-contact-link:hover{
+    color: var(--white-color)
 }
 .about-skills-wrapper{
     border-top: 1px solid var(--dark-white-color);
