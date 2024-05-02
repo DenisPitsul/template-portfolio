@@ -23,9 +23,6 @@ body {
     margin: 0 auto;
     overflow: hidden;
 }
-.header{
-    
-}
 .side-menu{
     position: fixed;
     top: 0;
@@ -40,9 +37,6 @@ body {
     background-color: var(--white-color);
     transition: transform 0.5s ease-in-out;
     color: var(--dark-gray-color);
-}
-.nav{
-    
 }
 @media screen and (min-width: 1600px) {
     .side-menu {
